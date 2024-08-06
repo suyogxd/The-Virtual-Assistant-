@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    </script>
+    <title>MONA</title>
+    <style>
+      .page-header {
+        background-color: rgba(249, 249, 249, 0.7);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+        background-size: 50%
+      }
+
+      .page-header h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+        text-align: center;
+      }
+
+      .heading {
+        color: #ffffff;
+      }
+
+      .page th {
+        background-color: #000405;
+        color: white;
+      }
+
+      body {
+        background-image: url("https://raw.githubusercontent.com/Samiikshyaa/background/main/background.jpg");
+        height: 755px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+      }
+
+      .center1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .output-heading {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+      .output-box {
+        border: 1px solid #ccc;
+        background-color:  rgba(249, 249, 249, 0.8);
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 650px;
+        height: auto;
+        max-height: 300px;
+        overflow-y: auto;
+        box-sizing: border-box;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .foot {
+        color: black;
+        text-align: center;
+        padding: 10px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+  
+    </style>
+  </head>
+
+  <body>
+    <div class="page-header">
+      <h1 style="font-size: 40px">THE VIRTUAL ASSISTANT</h1>
+    </div>
+    <div>
+      <h1 class="heading center"> </h1>
+
+      <br />
+      <form method="POST" action="/" enctype="multipart/form-data">
+        <button
+          type="submit"
+          class="btn btn-primary button_add"
+          style="
+            margin: 0 auto;
+            display: block;
+            border-radius: 12px;
+            width: 100px;
+          "
+        >
+          <i class="fa fa-microphone"></i>
+        </button>
+        <h1 class="heading center1">Tap to Speak</h1>
+      </div>
+      </form>
+      <form method="GET" action="/" enctype="multipart/form-data"></form>
+      <br />  
+    </div>
+
+    <div class="output-heading"> CONVERSATION:</div>
+    <div class="output-box">
+      {% for line in conversation %}
+       <b>{{ line }}</b><br>
+      {% endfor %}
+    </div>
+
+    <h1 class="heading center"> </h1>
+    <h1 class="heading center"> </h1>
+
+    <div class="foot">
+      <hr color="black">
+      <B>MONA -THE VIRTUAL ASSISTANT</B> 2023 &copy; Designed for minor project <B><a href="about.html">MORE</B></a>
+      <br><p>Creators: Pratik Kumar Labh, Samikshya Timalsina, Suyog Sharma, Utsav Sharma</p>
+      
+    </div>
+  </body>
+</html>
